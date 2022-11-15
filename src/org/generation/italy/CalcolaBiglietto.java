@@ -1,8 +1,8 @@
-package org.booleancaeer.java;
+package org.generation.italy;
 
 import java.util.Scanner;
 
-public class bigliettoTreno {
+public class CalcolaBiglietto {
 //	TODO:
 //
 //		Ciao!
