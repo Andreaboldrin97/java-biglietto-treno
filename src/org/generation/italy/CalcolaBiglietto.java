@@ -42,12 +42,12 @@ public class CalcolaBiglietto {
 		double PriceBonus = km * 0.01;
 		
 		// CALCOLO IL COSTO DEL BIGLIETTO SENZA SCONTI E LO STAMPO IN CONSOLE
-		double totalPrice = km * 0.21 + PriceBonus;
+		double totalPrice = km * 0.21 ;
 		
 		// CREO LA CONDIZIONE PER VERIFICARE LO SCONTO
 		
 		if(age < 18) {
-			totalPrice = totalPrice * 0.2 + PriceBonus;
+			totalPrice -= totalPrice * 0.2 ;
 			
 			// BONUS 1
 			if (age < 12) {
@@ -55,12 +55,12 @@ public class CalcolaBiglietto {
 			}
 			
 		}else if(age > 65) {
-			totalPrice = totalPrice * 0.4 + PriceBonus;
+			totalPrice -= totalPrice * 0.4 ;
 		}
 		
 		System.out.println("il costo del tuo biglietto è di euro :");
 		// STAMPO IL RISULTATO
-		System.out.printf("%.2f",totalPrice);
+		System.out.printf("%.2f",totalPrice + PriceBonus);
 		
 	}
 
